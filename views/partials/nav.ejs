@@ -1,0 +1,21 @@
+<nav class="z-50 p-8 flex justify-between items-center uppercase relative text-white border-b-[1px] border-gray-700 bg-black/10">
+    <h1 class="text-2xl font-bold">solarmystic</h1>
+    <div class="flex gap-14 absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2">
+        <% if ( user ){  %>
+            <a href="/profile">home</a>
+            <a href="/logout">logout</a>
+    
+       <% }else {  %>
+            <a href="/">home</a>
+            <a href="/login">login</a>
+    
+      <%  } %>
+        <a href="/about">about</a>
+        <a href="/service">our service</a>
+    </div>
+    <div class="flex flex-col items-end">
+        <h5 class="text-sm">call us now <i class="ri-phone-fill"></i></h5>
+        <h1 class="text-xl">+91 9403748327</h1>
+    </div>
+   
+</nav>

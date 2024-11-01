@@ -1,0 +1,104 @@
+<%- include('./partials/header')%>
+<!-- <%- include('./partials/nav')%> -->
+<!-- <h1>this is register</h1> -->
+
+<div class="relative h-[100vh]">
+    <form action="/register" method="post">
+        <div class="fixed top-0 w-full z-50">
+            <%- include('./partials/nav')%>
+            
+        </div>
+         
+    <div class="absolute top-0 flex items-center bg-black justify-center h-[100vh] w-full pt-14 ">
+        <div class="w-[35%] h-[80%] bg-gradient-to-r from-red-500   to-amber-600 rounded-xl flex items-center justify-center flex-col ">
+          <div class=" w-[60%] h-[75%] flex flex-col gap-4">
+          <div class=" leading-[2rem]">
+             <h1 class="text-[1rem]">HELLO,</h1>
+             <h1 class="text-[3rem] font-bold">WELCOME !</h1>
+          </div>
+        <input
+          class="text-white placeholder-white p-3 rounded-full border-[3px] bg-transparent "
+          type="text"
+          placeholder="name"
+          name="name"
+        /> 
+        <input
+          class="text-white placeholder-white p-3 rounded-full border-[3px] bg-transparent "
+          type="text"
+          placeholder="username"
+          name="username"
+        /> 
+        
+        <input
+          class="text-white placeholder-white p-3 rounded-full border-[3px] bg-transparent "
+          type="text"
+          placeholder="email"
+          name="email"
+        /> 
+        
+        <input
+          class="text-white placeholder-white p-3 rounded-full border-[3px] bg-transparent "
+          type="password"
+          placeholder="Password"
+          name="password"
+        />
+        
+    
+        <button class="bg-white p-3 text-black rounded-full font-semibold text-black" >Register </button>
+        
+        <div class="flex">
+            <p>already having account? </p>
+            <a class="text-blue-200" href="/login">login</a>
+    
+        </div>
+    
+        <!-- <div class="flex justify-center gap-5 text-white">
+        <a class="text-[2rem]" href=""><i class="ri-facebook-circle-line"></i></a>
+        <a class="text-[2rem]" href=""><i class="ri-instagram-line"></i></a>
+        <a class="text-[2rem]" href=""><i class="ri-google-fill"></i></a>
+        </div> -->
+       
+        </div>
+          </div>
+       
+        
+      </div>
+    
+    
+    
+    
+    </form>
+</div>
+
+
+<div class="footer bg-black text-yellow-300 p-16 border-t-2 border-gray-700">
+    <h1 class="text-5xl font-bold mb-14 ">Contact Us</h1>
+    <div class="flex items-center justify-center gap-52">
+        <div class="flex flex-col gap-4">
+            <p><i class="ri-phone-fill"></i> 8770326097, 9770870743</p>
+            <a href=""><i class="ri-mail-line"></i> solarmysticenergy@gmail.com</a> 
+            <a href=""><i class="ri-global-line"></i> www.solarmysticenergy.com.in</a>
+        </div>
+        <div class="flex flex-col gap-4">
+            <p class="uppercase text-2xl"> address</p>
+            <p>2176, Hawa Ghar Chowk, <br>
+                Wright Town, Jabalpur <br>
+                482002, M.P.</p>
+        </div>
+        <div class="text-3xl">
+            <i class="ri-instagram-line"></i>
+            <i class="ri-facebook-circle-line"></i>
+            <i class="ri-google-fill"></i>
+            <i class="ri-linkedin-box-line"></i>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<%- include('./partials/footer')%>
